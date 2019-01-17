@@ -71,7 +71,7 @@ int main()
     //Initialize or input i.e. set variable values
     oilPrft = 0.0826f;//8.26 percent profit
     fTx = 0.184;  //18.4 cents per gallon or $0.184
-    stTx = 0.390;  //47.3 cents per gallon or $0.473 
+    stTx = 0.390;  //0.390 cents per gallon or $0.39 
     saTx = 0.080; //California sales tax on gas.
     cTx = 0.100;  // 10 cents per gallon or $0.100
     // I did as the Lab Assignment on Canvas asked and gave the program an
