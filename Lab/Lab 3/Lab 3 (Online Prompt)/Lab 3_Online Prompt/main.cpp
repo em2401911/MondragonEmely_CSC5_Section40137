@@ -63,15 +63,17 @@ int main()
     float oilPrft,  //Oil Company Profit
           fTx,   //Federal excise Tax
           stTx,  //State excise Tax
-          saTx,  //California State Sales Tax on fuel
-          pPrice,   //Price at the pump to consumer
+          saTx,  //California State Sales Tax
+          cTx,  // Cap and trade fee tax
+          pPrice,   //Price at the pump
           sPrice;   //Price to the gas station
     
     //Initialize or input i.e. set variable values
     oilPrft = 0.0826f;//8.26 percent profit
     fTx = 0.184;  //18.4 cents per gallon or $0.184
-    stTx = 0.39;  //47.3 cents per gallon or $0.473 
-    saTx = 0.0425; //California sales tax on gas.
+    stTx = 0.390;  //47.3 cents per gallon or $0.473 
+    saTx = 0.080; //California sales tax on gas.
+    cTx = 0.100;  // 10 cents per gallon or $0.100
     // I did as the Lab Assignment on Canvas asked and gave the program an
     // input. I would input 3.259 from Chevron, in my case.
     
@@ -80,7 +82,7 @@ int main()
     cout << "the last time you put gas in your car.\n";
     cin >> pPrice;
     
-    sPrice = (pPrice - fTx - stTx)/(1 + saTx);
+    sPrice = (pPrice - fTx - stTx - cTx)/(1 + saTx);
     
     //Display the outputs
     
@@ -88,6 +90,7 @@ int main()
     cout << "Pump Price      = $" << pPrice << "/gallon\n";
     cout << "Fed   Ex Tax    = $" << fTx << "/gallon" << endl;
     cout << "State Ex Tax    = $" << stTx << "/gallon" << endl;
+    cout << "Cap and Fee Tax    = $" << cTx << "/gallon" << endl;
     cout << "State Sales Tax = $" << sPrice*saTx << "/gallon" << endl;
     cout << "Station Price   = $"<< sPrice << "/gallon" << endl;
     cout << "Oil Company Profit   = " << oilPrft*PERCENT <<"%/gallon" << endl;
