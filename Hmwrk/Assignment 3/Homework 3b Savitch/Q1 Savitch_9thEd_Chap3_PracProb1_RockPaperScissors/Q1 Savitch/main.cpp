@@ -29,15 +29,87 @@ using namespace std;
 //Function Prototypes
 
 //Execution Begins Here!
-int main(int argc, char** argv) {
+int main() 
+{
     //Set the random number seed
     
-    //Declare Variables
+    char r, p, s, R, P, S, p1, p2;//Declare Variables
     
     //Initialize or input i.e. set variable values
     
     //Map inputs -> outputs
     
+    cout << "Rock Paper Scissors Game\n";
+    cout << "Input Player 1 and Player 2 Choices\n";
+    cin >> p1;
+    cin >> p2;
+    
+    // There are 12 possible combinations 
+   
+    if (p1 == 'P' && p2 == 'P');
+    {  cout << "It's a tie."; }
+    
+       if (p1 == r && p2 == r);
+    {  cout << "It's a tie."; }
+       
+     if (p1 == p && p2 == p);
+    {  cout << "It's a tie."; }
+     
+      if (p1 == s && p2 == s);
+    {  cout << "It's a tie."; }
+    
+    if ( p1 == 'P' && p2 == R );
+    { cout << "Paper covers rock."; } 
+    
+    if ( p1 == 'P'  && p2 == S );
+    { cout << "Scissors cuts paper."; } 
+    
+    if ( p1 == R && p2 == 'P'  );
+    { cout << "Paper covers rock."; } 
+    
+    if ( p1 == R && p2 == S );
+    { cout << "Rock breaks scissors."; } 
+    
+    if ( p1 == S && p2 == 'P' );
+    { cout << "Scissors cuts paper."; } 
+    
+    if ( p1 == S && p2 == R );
+    { cout << "Rock breaks scissors."; } 
+    
+    if ( p1 == p && p2 == r );
+    { cout << "Paper covers rock."; } 
+    
+    if ( p1 == p && p2 == s );
+    { cout << "Scissors cuts paper."; } 
+    
+    if ( p1 == r && p2 == p );
+    { cout << "Paper covers rock."; } 
+    
+    if ( p1 == r && p2 == s );
+    { cout << "Rock breaks scissors."; } 
+    
+    if ( p1 == s && p2 == p );
+    { cout << "Scissors cuts paper."; }
+    
+    if ( p1 == s && p2 == r );
+    { cout << "Rock breaks scissors."; } 
+    
+     if (p1 == R && p2 == R);
+    {  cout << "It's a tie."; }
+     
+      if (p1 == S && p2 == S);
+    {  cout << "It's a tie."; }
+      
+   
+            
+            
+            
+            
+     
+              
+            
+            
+           
     //Display the outputs
 
     //Exit stage right or left!

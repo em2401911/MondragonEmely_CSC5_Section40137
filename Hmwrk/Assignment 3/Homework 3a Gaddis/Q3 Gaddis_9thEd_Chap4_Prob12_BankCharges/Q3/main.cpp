@@ -35,11 +35,9 @@ int main()
     //Initialize or input i.e. set variable values
     //Map inputs -> outputs
    cout <<"Monthly Bank Fees\n";
-   cout <<"Input Current Bank Balance and Number of Checks" << endl;
-   cout << "Balance     $   ";
-   cin >> balance; 
-   cin >> ncheck;
-   cout << endl;
+   cout <<"Input Current Bank Balance and Number of Checks\n";
+   cin >> balance >> ncheck;
+   cout << "Balance     $   " << balance << ".00" << endl;
    
    
    cout << setprecision (2) << fixed; //Displays
@@ -78,11 +76,11 @@ int main()
    else 
        Lfee = 0.00; 
    
-  cout << "Low Balance $    15.00\n";
+  cout << "Low Balance $   "<<setw(6)<< Lfee <<endl;
   //Calculated final balance
 
    nbalance = ((balance - Lfee) - cfee) - mfee;
-   cout << "New Balance $    " << nbalance; //Display the outputs
+   cout << "New Balance $   " <<setw(6)<< nbalance; //Display the outputs
 
          
     //Exit stage right or left!

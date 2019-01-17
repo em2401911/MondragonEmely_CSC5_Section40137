@@ -38,37 +38,7 @@ int main()
  cout << "Input the number of books purchased this month.\n" << "Books purchased = "; 
  cin >> books;
  cout << endl;
- 
- if(books == 0)
- {
- points = 0;
- cout <<"Points earned   = "<< points;
- }
- if(books == 1)
- {
- points = 5;
- cout << "Points earned   = " << points;
- }
- if(books == 2)
- {
- points = 15;
- cout << "Points earned   = " << points;
- }
- if(books == 3)
- {
- points = 30;
- cout << "Points earned   = " << points;
- }
- if(books >= 4)
- {
- points = 60;
- cout << "Points earned   = " << points;
- }
- else
- {
- if(books < 0)
- cout << "Number of books cannot be negative!! \n\n";
- }
+
 
 
  return 0;
